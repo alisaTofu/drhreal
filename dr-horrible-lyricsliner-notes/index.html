@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      Lyrics &amp; Liner Notes – Dr. Horrible’s Sing-Along Blog Soundtrack
+    </title>
+    <meta
+      name="description"
+      content="Official track list, credits, and liner notes for the Dr. Horrible’s Sing-Along Blog motion picture soundtrack, including a dedicated lyrics page for “My Eyes”."
+    />
+    <link
+      rel="canonical"
+      href="https://drhorrible.com/dr-horrible-lyricsliner-notes/"
+    />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#020617" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Notification -->
+    <div
+      id="notification"
+      class="pointer-events-none fixed inset-x-0 top-3 flex justify-center px-4 z-50 hidden"
+      aria-live="polite"
+    >
+      <div
+        id="notificationInner"
+        class="pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg"
+      >
+        <span id="notificationMessage" class="block"></span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/images/logo-lab-goggles.webp"
+            alt="Logo of a mad scientist with lab goggles in a glowing blue circle"
+            class="h-9 w-auto md:h-10"
+            loading="lazy"
+          />
+          <span
+            class="text-sm font-semibold uppercase tracking-wide leading-tight md:text-base"
+          >
+            Dr. Horrible’s<br class="md:hidden" />
+            Sing-Along Blog
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden items-center gap-6 text-xs font-semibold uppercase tracking-wide md:flex"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="text-cyan-300 hover:text-cyan-200"
+            >Extras</a
+          >
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="inline-flex items-center gap-2 rounded border border-slate-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="hidden border-t border-slate-800 bg-slate-950 md:hidden"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col px-4 py-3 text-xs font-semibold uppercase tracking-wide space-y-2"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="text-cyan-300">Extras</a>
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SOUNDTRACK PAGE -->
+      <section
+        class="border-b border-slate-800 bg-gradient-to-b from-sky-950 via-sky-900 to-sky-950"
+      >
+        <div class="mx-auto max-w-5xl px-4 py-10 md:py-16">
+          <!-- Title block -->
+          <div class="text-center">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300"
+            >
+              Lyrics &amp; Liner Notes
+            </p>
+            <h1
+              class="mt-3 text-3xl font-extrabold tracking-wide text-sky-50 md:text-4xl"
+            >
+              DR. HORRIBLE’S SING-ALONG BLOG
+            </h1>
+            <p
+              class="mt-1 text-sm font-semibold uppercase tracking-[0.2em] text-sky-200"
+            >
+              Soundtrack from the motion picture
+            </p>
+          </div>
+
+          <!-- Credits / recording info -->
+          <div
+            class="mt-8 grid gap-8 text-xs text-sky-100/80 md:grid-cols-[minmax(0,1.2fr)_auto_minmax(0,1.2fr)] md:items-start"
+          >
+            <p>
+              Produced, orchestrated, recorded and played by Jed Whedon<br />
+              Recorded at Burnside Studios, Los Angeles, CA
+            </p>
+
+            <!-- Divider shown on md+ -->
+            <div
+              class="hidden h-full w-px bg-sky-500/50 md:block md:justify-self-center"
+            ></div>
+
+            <p>
+              Vocals recorded on March 1st – 5th in Joss’ loft<br />
+              Mastered by Robert Hadley at The Mastering Lab, Ojai, CA
+            </p>
+          </div>
+
+          <!-- Track list -->
+          <div
+            class="mt-10 grid gap-10 text-sm font-medium text-sky-50 md:grid-cols-2"
+          >
+            <ul class="space-y-2">
+              <li>Horrible Theme</li>
+              <li>My Freeze Ray</li>
+              <li>Bad Horse Chorus</li>
+              <li>Caring Hands</li>
+              <li>A Man’s Gotta Do</li>
+              <li>
+                <a
+                  href="/dr-horrible-lyricsliner-notes/my-eyes/"
+                  class="underline decoration-sky-400 decoration-2 underline-offset-4 hover:text-sky-200"
+                >
+                  My Eyes
+                </a>
+              </li>
+              <li>Bad Horse Chorus (reprise)</li>
+            </ul>
+            <ul class="space-y-2">
+              <li>Penny’s Song</li>
+              <li>Brand New Day</li>
+              <li>So They Say</li>
+              <li>Everyone’s A Hero</li>
+              <li>Slipping</li>
+              <li>Everything You Ever</li>
+              <li>Horrible Credits</li>
+            </ul>
+          </div>
+
+          <!-- Note about My Eyes page -->
+          <div
+            class="mt-10 border-t border-sky-700/70 pt-6 text-sm text-sky-100"
+          >
+            <p>
+              Full lyrics and additional liner notes are currently available for
+              <a
+                href="/dr-horrible-lyricsliner-notes/my-eyes/"
+                class="font-semibold text-sky-200 underline decoration-sky-400 underline-offset-4 hover:text-sky-50"
+              >
+                “My Eyes”
+              </a>
+              . Additional song-specific notes may be added as new material is
+              cleared from the lab archives.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-300">
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; <span id="year"></span> DrHorrible.com. This site is a
+            fan-friendly hub for the musical world of Dr. Horrible’s Sing-Along
+            Blog.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/privacy-policy.html" class="hover:text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS: year + mobile menu + notification helper -->
+    <script>
+      // Dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = mobileNav.classList.contains("hidden") === false;
+          mobileNav.classList.toggle("hidden");
+          menuButton.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+
+      // Notification helper (kept for consistency with other pages)
+      function showNotification(message, type) {
+        const wrapper = document.getElementById("notification");
+        const inner = document.getElementById("notificationInner");
+        const text = document.getElementById("notificationMessage");
+
+        if (!wrapper || !inner || !text) return;
+
+        text.textContent = message;
+
+        inner.className =
+          "pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg";
+
+        if (type === "error") {
+          inner.classList.add(
+            "bg-red-900/90",
+            "border-red-500",
+            "text-red-50",
+            "shadow-red-500/30"
+          );
+        } else {
+          inner.classList.add(
+            "bg-emerald-900/90",
+            "border-emerald-500",
+            "text-emerald-50",
+            "shadow-emerald-500/30"
+          );
+        }
+
+        wrapper.classList.remove("hidden");
+        setTimeout(() => {
+          wrapper.classList.add("hidden");
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

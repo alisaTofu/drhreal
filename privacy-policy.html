@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Privacy Policy – Dr. Horrible’s Sing-Along Blog</title>
+    <meta
+      name="description"
+      content="Privacy Policy for DrHorrible.com. Learn how we collect, use, and protect information when you visit the official site for Dr. Horrible’s Sing-Along Blog."
+    />
+    <link rel="canonical" href="https://drhorrible.com/privacy-policy.html" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#020617" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Notification (reserved for global use, not used on this page now) -->
+    <div
+      id="notification"
+      class="pointer-events-none fixed inset-x-0 top-3 flex justify-center px-4 z-50 hidden"
+      aria-live="polite"
+    >
+      <div
+        id="notificationInner"
+        class="pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg"
+      >
+        <span id="notificationMessage" class="block"></span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/images/logo-lab-goggles.webp"
+            alt="Logo of a mad scientist with lab goggles in a glowing blue circle"
+            class="h-9 w-auto md:h-10"
+            loading="lazy"
+          />
+          <span
+            class="text-sm font-semibold uppercase tracking-wide leading-tight md:text-base"
+          >
+            Dr. Horrible’s<br class="md:hidden" />
+            Sing-Along Blog
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden items-center gap-6 text-xs font-semibold uppercase tracking-wide md:flex"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="hover:text-cyan-200">Extras</a>
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="inline-flex items-center gap-2 rounded border border-slate-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="hidden border-t border-slate-800 bg-slate-950 md:hidden"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col px-4 py-3 text-xs font-semibold uppercase tracking-wide space-y-2"
+        >
+          <a href="/" class="text-cyan-300">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/products.html">Products</a>
+          <a href="/extras.html">Extras</a>
+          <a href="/plan.html">Plan</a>
+          <a href="/mushortio.html">Mushortio</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PAGE HERO / INTRO -->
+      <section
+        class="border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-950 to-black"
+      >
+        <div
+          class="mx-auto max-w-6xl px-4 py-10 md:flex md:items-center md:justify-between md:py-14 gap-10"
+        >
+          <div class="max-w-xl">
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+            >
+              Legal &amp; Privacy
+            </p>
+            <h1
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-50 md:text-4xl"
+            >
+              Privacy Policy
+            </h1>
+            <p class="mt-3 text-sm text-slate-200 md:text-base">
+              This Privacy Policy explains how DrHorrible.com collects, uses,
+              and protects information when you visit the official site for
+              <span class="font-semibold">Dr. Horrible’s Sing-Along Blog</span>.
+            </p>
+            <p class="mt-2 text-xs text-slate-400">
+              Last updated:
+              <span class="font-semibold">January 15, 2025</span>
+            </p>
+          </div>
+
+          <div class="mt-6 md:mt-0 md:w-80">
+            <div
+              class="aspect-[4/3] overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-xl shadow-cyan-500/20"
+            >
+              <img
+                src="/images/privacy-lab-shield.webp"
+                alt="Stylized glowing shield icon floating above a laboratory console, symbolizing data protection"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIVACY CONTENT -->
+      <section class="bg-slate-950">
+        <div
+          class="mx-auto max-w-4xl px-4 py-10 space-y-10 md:py-14 md:space-y-12"
+        >
+          <!-- 1. Introduction -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              1. Introduction
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              When we say “we”, “us” or “our” in this Privacy Policy, we mean
+              the operators of DrHorrible.com. We run this site so fans of
+              <span class="font-semibold">Dr. Horrible’s Sing-Along Blog</span>
+              can learn more about the musical, explore official products, and
+              discover web extras from the lab.
+            </p>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              This page describes what information may be collected when you
+              visit the website, why we collect it, and what choices you have.
+              By using the site, you agree to the practices described here.
+            </p>
+          </section>
+
+          <!-- 2. Information We Collect -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              2. Information We Collect
+            </h2>
+
+            <h3 class="text-sm font-semibold text-slate-100 md:text-base">
+              2.1 Information you choose to provide
+            </h3>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              We may collect information you provide directly to us, for example
+              when you:
+            </p>
+            <ul
+              class="ml-5 list-disc space-y-1 text-sm leading-relaxed text-slate-200 md:text-base"
+            >
+              <li>send us a message through a contact form;</li>
+              <li>request information about products or web extras;</li>
+              <li>
+                sign up to receive occasional news or updates (if available);
+              </li>
+              <li>communicate with us by email or other channels.</li>
+            </ul>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              The information you provide may include your name, email address,
+              and any other details you choose to share in your message.
+            </p>
+
+            <h3 class="text-sm font-semibold text-slate-100 md:text-base">
+              2.2 Information collected automatically
+            </h3>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              When you visit DrHorrible.com, some information is collected
+              automatically by your browser or device, such as:
+            </p>
+            <ul
+              class="ml-5 list-disc space-y-1 text-sm leading-relaxed text-slate-200 md:text-base"
+            >
+              <li>IP address and approximate location (city/country level);</li>
+              <li>browser type and settings;</li>
+              <li>device type and operating system;</li>
+              <li>pages you visit, time spent, and referring URLs.</li>
+            </ul>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              We use this information to understand how visitors use the site
+              and to keep DrHorrible.com secure and reliable.
+            </p>
+
+            <h3 class="text-sm font-semibold text-slate-100 md:text-base">
+              2.3 Cookies and similar technologies
+            </h3>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              Like most websites, we may use cookies and similar technologies to
+              remember your preferences and to measure site performance. Some
+              cookies are strictly necessary for the site to function, while
+              others help us understand which pages are most interesting to
+              visitors.
+            </p>
+          </section>
+
+          <!-- 3. How We Use Information -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              3. How We Use Your Information
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              We use the information described above for purposes such as:
+            </p>
+            <ul
+              class="ml-5 list-disc space-y-1 text-sm leading-relaxed text-slate-200 md:text-base"
+            >
+              <li>operating, maintaining, and improving DrHorrible.com;</li>
+              <li>responding to your messages and requests;</li>
+              <li>
+                understanding how fans interact with pages, products, and web
+                extras;
+              </li>
+              <li>detecting, preventing, and addressing technical issues;</li>
+              <li>
+                complying with legal obligations and enforcing our site terms.
+              </li>
+            </ul>
+          </section>
+
+          <!-- 4. Legal Bases (optional but realistic) -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              4. Legal Bases for Processing
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              If you are located in a region that requires a legal basis for
+              processing (such as the European Economic Area or United Kingdom),
+              we process personal information on the basis of:
+            </p>
+            <ul
+              class="ml-5 list-disc space-y-1 text-sm leading-relaxed text-slate-200 md:text-base"
+            >
+              <li>
+                <span class="font-semibold">Consent</span>, when you choose to
+                contact us or opt in to receive communications;
+              </li>
+              <li>
+                <span class="font-semibold">Legitimate interests</span>, such as
+                operating and improving the website, and keeping it secure;
+              </li>
+              <li>
+                <span class="font-semibold">Legal obligations</span>, when we
+                need to retain certain information for record-keeping.
+              </li>
+            </ul>
+          </section>
+
+          <!-- 5. Sharing -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              5. When We Share Information
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              We do not sell your personal information. We may share information
+              with:
+            </p>
+            <ul
+              class="ml-5 list-disc space-y-1 text-sm leading-relaxed text-slate-200 md:text-base"
+            >
+              <li>
+                trusted service providers who host the website, provide
+                analytics, or help us operate the site (under contracts that
+                require them to protect your information);
+              </li>
+              <li>
+                authorities or other parties when required by law, court order,
+                or to protect our rights or the safety of others;
+              </li>
+              <li>
+                another organization in connection with a business transfer
+                relating to the site (for example, a merger or reorganization).
+              </li>
+            </ul>
+          </section>
+
+          <!-- 6. Retention -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              6. Data Retention
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              We keep personal information only for as long as it is reasonably
+              necessary for the purposes described in this Policy, unless a
+              longer retention period is required by law. When information is no
+              longer needed, we take steps to delete or anonymize it.
+            </p>
+          </section>
+
+          <!-- 7. Your Choices -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              7. Your Choices &amp; Rights
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              Depending on your location, you may have certain rights over your
+              personal information, such as the right to:
+            </p>
+            <ul
+              class="ml-5 list-disc space-y-1 text-sm leading-relaxed text-slate-200 md:text-base"
+            >
+              <li>request access to the information we hold about you;</li>
+              <li>ask us to correct inaccurate or incomplete details;</li>
+              <li>request deletion of certain information;</li>
+              <li>object to or restrict specific types of processing;</li>
+              <li>withdraw consent where processing is based on consent.</li>
+            </ul>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              To exercise these rights, please contact us using the details in
+              the <span class="font-semibold">“How to Contact Us”</span> section
+              below. We may need to verify your identity before responding.
+            </p>
+          </section>
+
+          <!-- 8. Third-Party Links -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              8. Third-Party Services &amp; Links
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              DrHorrible.com may link to external services such as digital
+              stores, social platforms, or streaming providers. These third
+              parties have their own privacy policies, and we are not
+              responsible for how they handle your information. We encourage you
+              to review the privacy policies of any site you visit through a
+              link from this one.
+            </p>
+          </section>
+
+          <!-- 9. Children -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              9. Children’s Privacy
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              DrHorrible.com is intended for general audiences and is not
+              directed to children under the age of 13 (or the equivalent age of
+              consent in your region). We do not knowingly collect personal
+              information from children. If you believe a child has provided us
+              with personal information, please contact us so we can take
+              appropriate steps to remove it.
+            </p>
+          </section>
+
+          <!-- 10. Changes -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              10. Changes to This Policy
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              We may update this Privacy Policy from time to time to reflect
+              changes in the site, legal requirements, or how we handle
+              information. When we make material changes, we will update the
+              “Last updated” date at the top of this page. We encourage you to
+              review this Policy regularly to stay informed.
+            </p>
+          </section>
+
+          <!-- 11. Contact -->
+          <section class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50 md:text-2xl">
+              11. How to Contact Us
+            </h2>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              If you have questions about this Privacy Policy or how your
+              information is handled, you can contact us via the
+              <a
+                href="/contact.html"
+                class="font-semibold text-cyan-300 hover:text-cyan-200"
+                >Contact</a
+              >
+              page or by emailing:
+            </p>
+            <p class="text-sm leading-relaxed text-slate-200 md:text-base">
+              <span class="font-semibold">Email:</span>
+              privacy@drhorrible.com
+            </p>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-300">
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; <span id="year"></span> DrHorrible.com. This site is a
+            fan-friendly hub for the musical world of Dr. Horrible’s Sing-Along
+            Blog.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/privacy-policy.html" class="text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Simple JS for year + mobile menu -->
+    <script>
+      // Dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = !mobileNav.classList.contains("hidden");
+          mobileNav.classList.toggle("hidden");
+          menuButton.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+    </script>
+  </body>
+</html>

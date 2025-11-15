@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Extras – Dr. Horrible’s Sing-Along Blog</title>
+    <meta
+      name="description"
+      content="Explore web extras from Dr. Horrible’s Sing-Along Blog – soundtrack track list, lyrics & liner notes, and downloadable web banners and artwork from the lab."
+    />
+    <link rel="canonical" href="https://drhorrible.com/extras.html" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#020617" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Notification (shared) -->
+    <div
+      id="notification"
+      class="pointer-events-none fixed inset-x-0 top-3 flex justify-center px-4 z-50 hidden"
+      aria-live="polite"
+    >
+      <div
+        id="notificationInner"
+        class="pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg"
+      >
+        <span id="notificationMessage" class="block"></span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/images/logo-lab-goggles.webp"
+            alt="Logo of a mad scientist with lab goggles in a glowing blue circle"
+            class="h-9 w-auto md:h-10"
+            loading="lazy"
+          />
+          <span
+            class="text-sm font-semibold uppercase tracking-wide leading-tight md:text-base"
+          >
+            Dr. Horrible’s<br class="md:hidden" />
+            Sing-Along Blog
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden items-center gap-6 text-xs font-semibold uppercase tracking-wide md:flex"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="text-cyan-300 hover:text-cyan-200"
+            >Extras</a
+          >
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="inline-flex items-center gap-2 rounded border border-slate-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="hidden border-t border-slate-800 bg-slate-950 md:hidden"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col px-4 py-3 text-xs font-semibold uppercase tracking-wide space-y-2"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="text-cyan-300">Extras</a>
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO: EXTRAS OVERVIEW -->
+      <section
+        class="border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-950 to-black"
+      >
+        <div
+          class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] md:py-16"
+        >
+          <!-- Text -->
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+            >
+              Web Extras
+            </p>
+            <h1
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-50 md:text-4xl lg:text-5xl"
+            >
+              Soundtrack, Lyrics, and<br class="hidden md:block" />
+              Lab-Approved Artwork.
+            </h1>
+            <p class="mt-4 max-w-xl text-sm text-slate-200 md:text-base">
+              This is the corner of the lab where the extra experiments live:
+              the full motion picture soundtrack track list, lyrics &amp; liner
+              notes, and downloadable banners for your own slightly villainous
+              web presence.
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              <a
+                href="/dr-horrible-lyricsliner-notes/"
+                class="rounded-full bg-cyan-400 px-6 py-2 text-sm font-semibold uppercase tracking-wide text-slate-950 shadow-lg shadow-cyan-500/40 hover:bg-cyan-300"
+              >
+                View soundtrack track list
+              </a>
+              <a
+                href="/extras/web-banners/"
+                class="rounded-full border border-slate-500 px-6 py-2 text-sm font-semibold uppercase tracking-wide text-slate-100 hover:border-cyan-300 hover:text-cyan-200"
+              >
+                See web banners
+              </a>
+            </div>
+
+            <p class="mt-4 text-xs uppercase tracking-wide text-slate-400">
+              Lyrics &amp; liner notes • Web banners • Artwork
+            </p>
+          </div>
+
+          <!-- Hero Image -->
+          <div>
+            <div
+              class="aspect-[16/9] overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-xl shadow-cyan-500/20"
+            >
+              <img
+                src="/images/extras-lyrics.webp"
+                alt="Blue sci-fi style graphic showing the Dr. Horrible soundtrack track list"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOUNDTRACK TRACK LIST PREVIEW -->
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div
+            class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end"
+          >
+            <div>
+              <h2
+                class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+              >
+                Dr. Horrible’s Sing-Along Blog Soundtrack
+              </h2>
+              <p class="mt-2 max-w-xl text-sm text-slate-300 md:text-base">
+                Below is the official track list from the motion picture
+                soundtrack. Select
+                <span class="font-semibold text-cyan-300">“My Eyes”</span> to
+                read the full lyrics and liner notes; other songs are listed for
+                reference.
+              </p>
+            </div>
+            <a
+              href="/dr-horrible-lyricsliner-notes/"
+              class="text-xs font-semibold uppercase tracking-wide text-cyan-300 hover:text-cyan-200"
+            >
+              Open lyrics &amp; liner notes page &rarr;
+            </a>
+          </div>
+
+          <div
+            class="mt-6 overflow-hidden rounded-xl border border-slate-800 bg-gradient-to-br from-sky-950 via-sky-900 to-slate-950 px-6 py-6 md:px-10 md:py-8 shadow-lg shadow-sky-900/40"
+          >
+            <div class="md:flex md:items-start md:justify-between md:gap-8">
+              <div>
+                <p
+                  class="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300"
+                >
+                  Soundtrack from the motion picture
+                </p>
+                <h3
+                  class="mt-2 text-xl font-extrabold tracking-wide text-sky-100 md:text-2xl"
+                >
+                  DR. HORRIBLE’S SING-ALONG BLOG
+                </h3>
+              </div>
+              <div
+                class="mt-4 grid gap-4 text-[11px] text-sky-100/80 md:mt-0 md:grid-cols-2 md:text-xs"
+              >
+                <p>
+                  Produced, arranged and recorded by Jed Whedon<br />
+                  Recorded at Burnside Studios, Los Angeles, CA
+                </p>
+                <p>
+                  Vocals recorded in Joss’ loft, March 1–5<br />
+                  Mastered at The Mastering Lab, Ojai, CA
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="mt-6 grid gap-8 text-sm font-medium text-sky-50 md:grid-cols-2"
+            >
+              <ul class="space-y-2">
+                <li>Horrible Theme</li>
+                <li>My Freeze Ray</li>
+                <li>Bad Horse Chorus</li>
+                <li>Caring Hands</li>
+                <li>A Man’s Gotta Do</li>
+                <li>
+                  <a
+                    href="/dr-horrible-lyricsliner-notes/my-eyes/"
+                    class="underline decoration-sky-400 decoration-2 underline-offset-4 hover:text-sky-200"
+                  >
+                    My Eyes
+                  </a>
+                </li>
+                <li>Bad Horse Chorus (reprise)</li>
+              </ul>
+              <ul class="space-y-2">
+                <li>Penny’s Song</li>
+                <li>Brand New Day</li>
+                <li>So They Say</li>
+                <li>Everyone’s A Hero</li>
+                <li>Slipping</li>
+                <li>Everything You Ever</li>
+                <li>Horrible Credits</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WEB BANNERS & ARTWORK -->
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div
+            class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end"
+          >
+            <div>
+              <h2
+                class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+              >
+                Web Banners &amp; Downloadable Artwork
+              </h2>
+              <p class="mt-2 max-w-xl text-sm text-slate-300 md:text-base">
+                Dress up your site, blog, or event page with artwork straight
+                from the lab. Use the banners below to point fans to your next
+                sing-along marathon.
+              </p>
+            </div>
+            <a
+              href="/extras/web-banners/"
+              class="text-xs font-semibold uppercase tracking-wide text-cyan-300 hover:text-cyan-200"
+            >
+              View banner download page &rarr;
+            </a>
+          </div>
+
+          <div class="mt-6 grid gap-6 md:grid-cols-3">
+            <!-- Banner set -->
+            <article
+              class="flex flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900/70"
+            >
+              <img
+                src="/images/extras-banners.webp"
+                alt="Collection of horizontal web banners in blue laboratory style with villain logo"
+                class="h-40 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Horizontal banner set
+                </h3>
+                <p class="mt-2 flex-1 text-xs text-slate-300">
+                  A pack of wide banners sized for blogs, forums, and event
+                  pages.
+                </p>
+              </div>
+            </article>
+
+            <!-- Avatar / social pack -->
+            <article
+              class="flex flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900/70"
+            >
+              <img
+                src="/images/extras-avatar-pack.webp"
+                alt="Square avatars featuring lab goggles, a villain emblem, and neon laboratory icons"
+                class="h-40 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Avatar &amp; icon pack
+                </h3>
+                <p class="mt-2 flex-1 text-xs text-slate-300">
+                  Square-ready icons for profiles, playlists, and discussion
+                  threads.
+                </p>
+              </div>
+            </article>
+
+            <!-- Wallpaper preview -->
+            <article
+              class="flex flex-col overflow-hidden rounded-xl border border-slate-800 bg-slate-900/70"
+            >
+              <img
+                src="/images/extras-wallpaper.webp"
+                alt="Wide desktop wallpaper showing a glowing blue laboratory skyline with villain silhouette"
+                class="h-40 w-full object-cover"
+                loading="lazy"
+              />
+              <div class="flex flex-1 flex-col p-4">
+                <h3 class="text-sm font-semibold text-slate-50">
+                  Desktop &amp; mobile wallpaper
+                </h3>
+                <p class="mt-2 flex-1 text-xs text-slate-300">
+                  A cinematic background inspired by the city and lab from the
+                  musical.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-300">
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; <span id="year"></span> DrHorrible.com. This site is a
+            fan-friendly hub for the musical world of Dr. Horrible’s Sing-Along
+            Blog.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/privacy-policy.html" class="hover:text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Basic JS: year + mobile menu (notification helper kept for consistency) -->
+    <script>
+      // Dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = mobileNav.classList.contains("hidden") === false;
+          mobileNav.classList.toggle("hidden");
+          menuButton.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+
+      // Notification helper (not used on this page yet, but shared with other pages)
+      function showNotification(message, type) {
+        const wrapper = document.getElementById("notification");
+        const inner = document.getElementById("notificationInner");
+        const text = document.getElementById("notificationMessage");
+
+        if (!wrapper || !inner || !text) return;
+
+        text.textContent = message;
+
+        inner.className =
+          "pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg";
+
+        if (type === "error") {
+          inner.classList.add(
+            "bg-red-900/90",
+            "border-red-500",
+            "text-red-50",
+            "shadow-red-500/30"
+          );
+        } else {
+          inner.classList.add(
+            "bg-emerald-900/90",
+            "border-emerald-500",
+            "text-emerald-50",
+            "shadow-emerald-500/30"
+          );
+        }
+
+        wrapper.classList.remove("hidden");
+        setTimeout(() => {
+          wrapper.classList.add("hidden");
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

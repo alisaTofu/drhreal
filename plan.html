@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>The Plan – Dr. Horrible’s Sing-Along Blog</title>
+    <meta
+      name="description"
+      content="Explore the long-term plan for Dr. Horrible’s Sing-Along Blog – from streaming availability and live sing-along events to future music, stories, and fan projects from the lab."
+    />
+    <link rel="canonical" href="https://drhorrible.com/plan.html" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#020617" />
+
+    <!-- Tailwind CDN (for mockup / dev) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Notification (kept for consistency, can be used later) -->
+    <div
+      id="notification"
+      class="pointer-events-none fixed inset-x-0 top-3 z-50 flex justify-center px-4 hidden"
+      aria-live="polite"
+    >
+      <div
+        id="notificationInner"
+        class="pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg"
+      >
+        <span id="notificationMessage" class="block"></span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/images/logo-lab-goggles.webp"
+            alt="Logo of a mad scientist with lab goggles in a glowing blue circle"
+            class="h-9 w-auto md:h-10"
+            loading="lazy"
+          />
+          <span
+            class="text-sm font-semibold uppercase tracking-wide leading-tight md:text-base"
+          >
+            Dr. Horrible’s<br class="md:hidden" />
+            Sing-Along Blog
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden items-center gap-6 text-xs font-semibold uppercase tracking-wide md:flex"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="hover:text-cyan-200">Extras</a>
+          <a href="/plan.html" class="text-cyan-300 hover:text-cyan-200"
+            >Plan</a
+          >
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="inline-flex items-center gap-2 rounded border border-slate-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="hidden border-t border-slate-800 bg-slate-950 md:hidden"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col space-y-2 px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+        >
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/products.html">Products</a>
+          <a href="/extras.html">Extras</a>
+          <a href="/plan.html" class="text-cyan-300">Plan</a>
+          <a href="/mushortio.html">Mushortio</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        class="border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-950 to-black"
+      >
+        <div
+          class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 md:grid-cols-2 md:py-16"
+        >
+          <!-- Hero Text -->
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+            >
+              The Plan
+            </p>
+            <h1
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-50 md:text-4xl lg:text-5xl"
+            >
+              A slightly evil roadmap<br class="hidden md:block" />
+              for the future of the show.
+            </h1>
+            <p class="mt-4 max-w-xl text-sm text-slate-200 md:text-base">
+              This page outlines how the world of
+              <span class="font-semibold">Dr. Horrible’s Sing-Along Blog</span>
+              continues to live on: where to watch it, how fans can gather, and
+              what kinds of projects the lab is quietly planning next.
+            </p>
+            <p class="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
+              Nothing here counts as a legally binding villain manifesto—just a
+              practical plan for keeping the musical active, singable, and easy
+              to discover.
+            </p>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="relative">
+            <div
+              class="aspect-[16/9] overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-xl shadow-cyan-500/20"
+            >
+              <img
+                src="/images/plan-lab-board.webp"
+                alt="Glowing laboratory planning board with sticky notes, sketches, and a rough roadmap drawn in blue light"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="absolute -bottom-4 -right-3 hidden rounded-lg bg-cyan-400 px-4 py-2 text-xs font-bold uppercase tracking-wide text-slate-950 shadow-lg shadow-cyan-500/50 md:block"
+            >
+              Phase-based roadmap
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CURRENT FOCUS -->
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div
+            class="flex flex-col items-start justify-between gap-4 md:flex-row md:items-end"
+          >
+            <div>
+              <h2
+                class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+              >
+                Current focus of the lab.
+              </h2>
+              <p class="mt-2 max-w-2xl text-sm text-slate-300 md:text-base">
+                The plan starts with simple goals: keep the show watchable, keep
+                the songs singable, and make sure fans have a clear place online
+                to land when they search for Dr. Horrible.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 grid gap-6 md:grid-cols-3">
+            <!-- Card 1 -->
+            <article
+              class="flex flex-col rounded-xl border border-slate-800 bg-slate-900/70 p-4"
+            >
+              <h3 class="text-sm font-semibold text-slate-50">
+                Streaming &amp; access
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Keep the musical available on at least one major digital
+                platform, with clear links from this site so new fans never have
+                to guess where to watch.
+              </p>
+              <ul class="mt-3 space-y-1 text-xs text-slate-200">
+                <li>• Check links regularly and update if platforms change.</li>
+                <li>• Highlight rental / purchase options side by side.</li>
+              </ul>
+            </article>
+
+            <!-- Card 2 -->
+            <article
+              class="flex flex-col rounded-xl border border-slate-800 bg-slate-900/70 p-4"
+            >
+              <h3 class="text-sm font-semibold text-slate-50">
+                Sing-along events
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Encourage small local screenings and sing-along nights with
+                guidelines, printable assets, and simple contact paths for
+                venues.
+              </p>
+              <ul class="mt-3 space-y-1 text-xs text-slate-200">
+                <li>• Provide event tips and basic technical checklists.</li>
+                <li>• Offer artwork for posters and social media posts.</li>
+              </ul>
+            </article>
+
+            <!-- Card 3 -->
+            <article
+              class="flex flex-col rounded-xl border border-slate-800 bg-slate-900/70 p-4"
+            >
+              <h3 class="text-sm font-semibold text-slate-50">
+                Merch &amp; extra content
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Keep a small, focused catalog of items that feel directly tied
+                to the world of the show—no random add-ons, just things the
+                characters might actually own.
+              </p>
+              <ul class="mt-3 space-y-1 text-xs text-slate-200">
+                <li>• T-shirt, comic / book, and key artwork.</li>
+                <li>• Periodic refresh of designs, not constant churn.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="border-b border-slate-800 bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div class="max-w-2xl">
+            <h2
+              class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+            >
+              Roadmap from the villain’s notebook.
+            </h2>
+            <p class="mt-2 text-sm text-slate-300 md:text-base">
+              The plan is written like any good lab experiment: start small,
+              gather data, and adjust before building bigger machines. Dates
+              below are approximate and may shift as reality and budget demand.
+            </p>
+          </div>
+
+          <div class="mt-6 space-y-6">
+            <!-- Phase 1 -->
+            <div
+              class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 md:p-5"
+            >
+              <div
+                class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between"
+              >
+                <div>
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+                  >
+                    Phase I – Foundation
+                  </p>
+                  <h3 class="text-sm font-semibold text-slate-50">
+                    Keep the core musical easy to find.
+                  </h3>
+                </div>
+                <p class="text-xs text-slate-400">Year 1</p>
+              </div>
+              <div
+                class="mt-3 grid gap-4 text-xs text-slate-200 md:grid-cols-3"
+              >
+                <ul class="space-y-1">
+                  <li>• Refresh official website and navigation.</li>
+                  <li>
+                    • Consolidate links to streaming and purchase options.
+                  </li>
+                </ul>
+                <ul class="space-y-1">
+                  <li>• Publish clear lyrics &amp; liner notes index.</li>
+                  <li>• Release basic event guidelines for sing-alongs.</li>
+                </ul>
+                <ul class="space-y-1">
+                  <li>
+                    • Establish contact channel for venues and fan groups.
+                  </li>
+                  <li>• Collect early feedback on site usability.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div
+              class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 md:p-5"
+            >
+              <div
+                class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between"
+              >
+                <div>
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+                  >
+                    Phase II – Community
+                  </p>
+                  <h3 class="text-sm font-semibold text-slate-50">
+                    Support the people who won’t stop singing.
+                  </h3>
+                </div>
+                <p class="text-xs text-slate-400">Years 2–3</p>
+              </div>
+              <div
+                class="mt-3 grid gap-4 text-xs text-slate-200 md:grid-cols-3"
+              >
+                <ul class="space-y-1">
+                  <li>
+                    • Highlight fan-organised events on a simple calendar.
+                  </li>
+                  <li>• Add a small gallery of approved photos and posters.</li>
+                </ul>
+                <ul class="space-y-1">
+                  <li>
+                    • Introduce occasional Q&amp;A or commentary sessions.
+                  </li>
+                  <li>
+                    • Expand Mushortio section with short written pieces and odd
+                    lab notes.
+                  </li>
+                </ul>
+                <ul class="space-y-1">
+                  <li>• Offer limited-run variants of existing merchandise.</li>
+                  <li>• Improve accessibility notes for screenings.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div
+              class="rounded-xl border border-slate-800 bg-slate-900/70 p-4 md:p-5"
+            >
+              <div
+                class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between"
+              >
+                <div>
+                  <p
+                    class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+                  >
+                    Phase III – New experiments
+                  </p>
+                  <h3 class="text-sm font-semibold text-slate-50">
+                    Explore new stories without breaking the old ones.
+                  </h3>
+                </div>
+                <p class="text-xs text-slate-400">Beyond</p>
+              </div>
+              <div
+                class="mt-3 grid gap-4 text-xs text-slate-200 md:grid-cols-3"
+              >
+                <ul class="space-y-1">
+                  <li>• Develop ideas for short audio pieces or mini-songs.</li>
+                  <li>
+                    • Consider small-scale animated or comic continuations.
+                  </li>
+                </ul>
+                <ul class="space-y-1">
+                  <li>
+                    • Partner with select venues for recurring sing-along
+                    nights.
+                  </li>
+                  <li>• Test new ways for fans to participate remotely.</li>
+                </ul>
+                <ul class="space-y-1">
+                  <li>
+                    • Review all plans yearly against fan interest and time.
+                  </li>
+                  <li>
+                    • Keep the tone: funny, a little sad, and very musical.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LAB NOTES / VISUALS -->
+      <section class="bg-slate-950">
+        <div
+          class="mx-auto grid max-w-6xl gap-10 px-4 py-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:py-14"
+        >
+          <div>
+            <h2
+              class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+            >
+              Lab notes behind the scenes.
+            </h2>
+            <p class="mt-3 text-sm text-slate-300 md:text-base">
+              The plan is intentionally flexible. Technology, platforms, and fan
+              habits change, and the musical works best when it can follow along
+              without losing its strange little heart.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-200">
+              <li>
+                • Review streaming platforms and rights on a regular schedule.
+              </li>
+              <li>
+                • Protect the tone of the show more carefully than any specific
+                marketing plan.
+              </li>
+              <li>
+                • Keep the website fast, readable, and friendly to new visitors
+                who may only know one song.
+              </li>
+            </ul>
+            <p class="mt-4 text-sm text-slate-300 md:text-base">
+              For questions about events, licensing, or anything that feels
+              bigger than a laundromat conversation, use the contact page and
+              choose the option that best matches your question.
+            </p>
+            <div class="mt-5 flex flex-wrap gap-3">
+              <a
+                href="/extras.html"
+                class="rounded-full border border-slate-600 px-6 py-2 text-sm font-semibold uppercase tracking-wide hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Explore extras
+              </a>
+              <a
+                href="/contact.html"
+                class="rounded-full border border-slate-600 px-6 py-2 text-sm font-semibold uppercase tracking-wide hover:border-cyan-300 hover:text-cyan-200"
+              >
+                Contact the lab
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <div
+              class="overflow-hidden rounded-xl border border-slate-800 bg-slate-900/80"
+            >
+              <img
+                src="/images/plan-lab-notes.webp"
+                alt="Notebook pages filled with handwritten plans, arrows, and diagrams glowing in blue laboratory light"
+                class="h-60 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="overflow-hidden rounded-xl border border-slate-800 bg-slate-900/80"
+            >
+              <img
+                src="/images/plan-blueprint-desk.webp"
+                alt="Top-down view of a desk covered in blueprints, goggles, and small lab tools"
+                class="h-40 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-300">
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; <span id="year"></span> DrHorrible.com. This site is a
+            fan-friendly hub for the musical world of Dr. Horrible’s Sing-Along
+            Blog.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/privacy-policy.html" class="hover:text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Simple JS for menu + optional notifications -->
+    <script>
+      // Dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = !mobileNav.classList.contains("hidden");
+          mobileNav.classList.toggle("hidden");
+          menuButton.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+
+      // Notification helper (not used yet, kept for consistency)
+      function showNotification(message, type) {
+        const wrapper = document.getElementById("notification");
+        const inner = document.getElementById("notificationInner");
+        const text = document.getElementById("notificationMessage");
+
+        if (!wrapper || !inner || !text) return;
+
+        text.textContent = message;
+        inner.className =
+          "pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg";
+
+        if (type === "error") {
+          inner.classList.add(
+            "bg-red-900/90",
+            "border-red-500",
+            "text-red-50",
+            "shadow-red-500/30"
+          );
+        } else {
+          inner.classList.add(
+            "bg-emerald-900/90",
+            "border-emerald-500",
+            "text-emerald-50",
+            "shadow-emerald-500/30"
+          );
+        }
+
+        wrapper.classList.remove("hidden");
+        setTimeout(() => {
+          wrapper.classList.add("hidden");
+        }, 3000);
+      }
+    </script>
+  </body>
+</html>

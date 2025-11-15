@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Contact – Dr. Horrible’s Sing-Along Blog</title>
+    <meta
+      name="description"
+      content="Get in touch with the lab behind Dr. Horrible’s Sing-Along Blog. Use this contact form for questions about events, screenings, press, licensing, or general enquiries."
+    />
+    <link rel="canonical" href="https://drhorrible.com/contact.html" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#020617" />
+
+    <!-- Tailwind CDN (for mockup / dev) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Notification -->
+    <div
+      id="notification"
+      class="pointer-events-none fixed inset-x-0 top-3 z-50 flex justify-center px-4 hidden"
+      aria-live="polite"
+    >
+      <div
+        id="notificationInner"
+        class="pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg"
+      >
+        <span id="notificationMessage" class="block"></span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/images/logo-lab-goggles.webp"
+            alt="Logo of a mad scientist with lab goggles in a glowing blue circle"
+            class="h-9 w-auto md:h-10"
+            loading="lazy"
+          />
+          <span
+            class="text-sm font-semibold uppercase tracking-wide leading-tight md:text-base"
+          >
+            Dr. Horrible’s<br class="md:hidden" />
+            Sing-Along Blog
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden items-center gap-6 text-xs font-semibold uppercase tracking-wide md:flex"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="hover:text-cyan-200">Products</a>
+          <a href="/extras.html" class="hover:text-cyan-200">Extras</a>
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="text-cyan-300 hover:text-cyan-200"
+            >Contact</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="inline-flex items-center gap-2 rounded border border-slate-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="hidden border-t border-slate-800 bg-slate-950 md:hidden"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col space-y-2 px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+        >
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/products.html">Products</a>
+          <a href="/extras.html">Extras</a>
+          <a href="/plan.html">Plan</a>
+          <a href="/mushortio.html">Mushortio</a>
+          <a href="/contact.html" class="text-cyan-300">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        class="border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-950 to-black"
+      >
+        <div
+          class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 md:grid-cols-2 md:py-16"
+        >
+          <!-- Hero Text -->
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+            >
+              Contact the lab
+            </p>
+            <h1
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-50 md:text-4xl lg:text-5xl"
+            >
+              Questions, screenings,<br class="hidden md:block" />
+              or carefully worded evil plans.
+            </h1>
+            <p class="mt-4 max-w-xl text-sm text-slate-200 md:text-base">
+              Use this page to reach the team that looks after
+              <span class="font-semibold">Dr. Horrible’s Sing-Along Blog</span>.
+              Whether you are planning a sing-along event, writing a piece for
+              the press, or just have a question about the show, this is the
+              place to start.
+            </p>
+            <p class="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
+              Fill out the form with as much detail as you can. Messages are
+              routed to the right part of the lab based on the topic you choose.
+            </p>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="relative">
+            <div
+              class="aspect-[16/9] overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-xl shadow-cyan-500/20"
+            >
+              <img
+                src="/images/contact-hero-control-room.webp"
+                alt="Control room in a blue-lit laboratory with monitors, microphones, and notes pinned around"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="absolute -bottom-4 -right-3 hidden rounded-lg bg-cyan-400 px-4 py-2 text-xs font-bold uppercase tracking-wide text-slate-950 shadow-lg shadow-cyan-500/50 md:block"
+            >
+              Incoming messages
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM + INFO -->
+      <section class="bg-slate-950">
+        <div
+          class="mx-auto grid max-w-6xl gap-10 px-4 py-10 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:py-14"
+        >
+          <!-- Form -->
+          <div>
+            <h2
+              class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+            >
+              Send a message to the lab.
+            </h2>
+            <p class="mt-3 text-sm text-slate-300 md:text-base">
+              Please include the name of your venue, outlet, or project if your
+              enquiry is related to events, licensing, or press. For general
+              questions, a short description is enough.
+            </p>
+
+            <form id="contactForm" class="mt-6 space-y-4" novalidate>
+              <div class="grid gap-4 md:grid-cols-2">
+                <div>
+                  <label
+                    for="name"
+                    class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                  >
+                    Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                    placeholder="Your full name"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                  >
+                    Email
+                  </label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                    placeholder="you@example.com"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  for="topic"
+                  class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                >
+                  Topic
+                </label>
+                <select
+                  id="topic"
+                  name="topic"
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                >
+                  <option value="">Choose a topic</option>
+                  <option value="general">
+                    General question about the show
+                  </option>
+                  <option value="event">Event / screening enquiry</option>
+                  <option value="licensing">Licensing or permissions</option>
+                  <option value="press">Press / media enquiry</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  for="message"
+                  class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 placeholder:text-slate-500 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                  placeholder="Tell us what you’re planning, including dates, locations, and any relevant links."
+                ></textarea>
+              </div>
+
+              <div class="flex items-start gap-2 text-xs text-slate-300">
+                <input
+                  id="agreement"
+                  type="checkbox"
+                  class="mt-1 h-4 w-4 rounded border-slate-600 bg-slate-950 text-cyan-400 focus:ring-cyan-400"
+                />
+                <label for="agreement" class="leading-snug">
+                  I understand that replies may take time and that not all
+                  requests can be approved, especially those involving public
+                  screenings or commercial use.
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold uppercase tracking-wide text-slate-950 hover:bg-cyan-300"
+              >
+                Send message
+              </button>
+            </form>
+          </div>
+
+          <!-- Contact info / side panel -->
+          <aside
+            class="space-y-4 rounded-2xl border border-slate-800 bg-slate-900/80 p-5 shadow-lg shadow-cyan-500/10"
+          >
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+              >
+                Contact details
+              </p>
+              <h3 class="mt-2 text-lg font-semibold text-slate-50">
+                Where your message goes.
+              </h3>
+              <p class="mt-2 text-xs text-slate-300">
+                Messages from this form are routed to the small team that
+                manages Dr. Horrible’s Sing-Along Blog online presence and
+                coordinates with the original creative crew when needed.
+              </p>
+            </div>
+
+            <div class="space-y-2 text-sm text-slate-200">
+              <p>
+                <span class="font-semibold">General enquiries:</span>
+                <span class="text-cyan-300">info@drhorrible.com</span>
+              </p>
+              <p>
+                <span class="font-semibold">Events &amp; screenings:</span>
+                <span class="text-cyan-300">events@drhorrible.com</span>
+              </p>
+              <p>
+                <span class="font-semibold">Press &amp; media:</span>
+                <span class="text-cyan-300">press@drhorrible.com</span>
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-slate-800 bg-slate-950 p-4">
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+              >
+                Typical response time
+              </p>
+              <p class="mt-2 text-xs text-slate-300">
+                The lab aims to review new messages within a few business days.
+                Time-sensitive event requests should include your proposed dates
+                in the message so they can be prioritised.
+              </p>
+            </div>
+
+            <div
+              class="overflow-hidden rounded-xl border border-slate-800 bg-slate-900/80"
+            >
+              <img
+                src="/images/contact-lab-desk.webp"
+                alt="A moody laboratory desk with blue glowing monitors, notes, and a microphone ready for recording"
+                class="h-40 w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-300">
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; <span id="year"></span> DrHorrible.com. This site is a
+            fan-friendly hub for the musical world of Dr. Horrible’s Sing-Along
+            Blog.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/privacy-policy.html" class="hover:text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS for menu + form validation + notifications -->
+    <script>
+      // Dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = !mobileNav.classList.contains("hidden");
+          mobileNav.classList.toggle("hidden");
+          menuButton.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+
+      // Notification helper
+      function showNotification(message, type) {
+        const wrapper = document.getElementById("notification");
+        const inner = document.getElementById("notificationInner");
+        const text = document.getElementById("notificationMessage");
+
+        if (!wrapper || !inner || !text) return;
+
+        text.textContent = message;
+
+        // Reset classes
+        inner.className =
+          "pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg";
+
+        if (type === "error") {
+          inner.classList.add(
+            "bg-red-900/90",
+            "border-red-500",
+            "text-red-50",
+            "shadow-red-500/30"
+          );
+        } else {
+          inner.classList.add(
+            "bg-emerald-900/90",
+            "border-emerald-500",
+            "text-emerald-50",
+            "shadow-emerald-500/30"
+          );
+        }
+
+        wrapper.classList.remove("hidden");
+
+        // Auto-hide after 3 seconds
+        setTimeout(() => {
+          wrapper.classList.add("hidden");
+        }, 3000);
+      }
+
+      // Simple email check
+      function isValidEmail(value) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      }
+
+      // Contact form validation (front-end only)
+      const contactForm = document.getElementById("contactForm");
+      if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const name = document.getElementById("name");
+          const email = document.getElementById("email");
+          const topic = document.getElementById("topic");
+          const message = document.getElementById("message");
+          const agreement = document.getElementById("agreement");
+
+          const errors = [];
+
+          if (!name.value.trim()) {
+            errors.push("Please enter your name.");
+          }
+
+          if (!email.value.trim()) {
+            errors.push("Please enter your email address.");
+          } else if (!isValidEmail(email.value.trim())) {
+            errors.push("Please enter a valid email address.");
+          }
+
+          if (!topic.value) {
+            errors.push("Please choose a topic for your enquiry.");
+          }
+
+          if (!message.value.trim()) {
+            errors.push("Please enter a message for the lab.");
+          } else if (message.value.trim().length < 20) {
+            errors.push(
+              "Your message should be at least 20 characters long so we can understand your enquiry."
+            );
+          }
+
+          if (!agreement.checked) {
+            errors.push(
+              "Please confirm that you understand the response and approval conditions."
+            );
+          }
+
+          if (errors.length > 0) {
+            showNotification(errors[0], "error");
+            return;
+          }
+
+          // Success (front-end only)
+          showNotification(
+            "Thank you. Your message has been sent to the lab team.",
+            "success"
+          );
+          contactForm.reset();
+        });
+      }
+    </script>
+  </body>
+</html>

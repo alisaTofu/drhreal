@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Products – Dr. Horrible’s Sing-Along Blog</title>
+    <meta
+      name="description"
+      content="Shop official products inspired by Dr. Horrible’s Sing-Along Blog – the lab T-shirt and the comic book that expands the musical world."
+    />
+    <link rel="canonical" href="https://drhorrible.com/products.html" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#020617" />
+
+    <!-- Tailwind CDN (for mockup / dev) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <!-- Notification -->
+    <div
+      id="notification"
+      class="pointer-events-none fixed inset-x-0 top-3 z-50 flex justify-center px-4 hidden"
+      aria-live="polite"
+    >
+      <div
+        id="notificationInner"
+        class="pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg"
+      >
+        <span id="notificationMessage" class="block"></span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+      <div
+        class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4"
+      >
+        <!-- Logo -->
+        <a href="/" class="flex items-center gap-3">
+          <img
+            src="/images/logo-lab-goggles.webp"
+            alt="Logo of a mad scientist with lab goggles in a glowing blue circle"
+            class="h-9 w-auto md:h-10"
+            loading="lazy"
+          />
+          <span
+            class="text-sm font-semibold uppercase tracking-wide leading-tight md:text-base"
+          >
+            Dr. Horrible’s<br class="md:hidden" />
+            Sing-Along Blog
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav
+          class="hidden items-center gap-6 text-xs font-semibold uppercase tracking-wide md:flex"
+        >
+          <a href="/" class="hover:text-cyan-200">Home</a>
+          <a href="/about.html" class="hover:text-cyan-200">About</a>
+          <a href="/products.html" class="text-cyan-300 hover:text-cyan-200"
+            >Products</a
+          >
+          <a href="/extras.html" class="hover:text-cyan-200">Extras</a>
+          <a href="/plan.html" class="hover:text-cyan-200">Plan</a>
+          <a href="/mushortio.html" class="hover:text-cyan-200">Mushortio</a>
+          <a href="/contact.html" class="hover:text-cyan-200">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="menuButton"
+          class="inline-flex items-center gap-2 rounded border border-slate-700 px-3 py-1 text-xs font-semibold uppercase tracking-wide md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span>Menu</span>
+          <div class="flex flex-col gap-0.5">
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+            <span class="block h-0.5 w-3 bg-slate-100"></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="hidden border-t border-slate-800 bg-slate-950 md:hidden"
+      >
+        <div
+          class="mx-auto flex max-w-6xl flex-col space-y-2 px-4 py-3 text-xs font-semibold uppercase tracking-wide"
+        >
+          <a href="/">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/products.html" class="text-cyan-300">Products</a>
+          <a href="/extras.html">Extras</a>
+          <a href="/plan.html">Plan</a>
+          <a href="/mushortio.html">Mushortio</a>
+          <a href="/contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section
+        class="border-b border-slate-800 bg-gradient-to-b from-slate-900 via-slate-950 to-black"
+      >
+        <div
+          class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 md:grid-cols-2 md:py-16"
+        >
+          <div>
+            <p
+              class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+            >
+              Official Products
+            </p>
+            <h1
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-50 md:text-4xl lg:text-5xl"
+            >
+              Bring the Lab<br class="hidden md:block" />
+              into Your Everyday Life.
+            </h1>
+            <p class="mt-4 max-w-xl text-sm text-slate-200 md:text-base">
+              From subtle apparel to page-turning stories, these products are
+              built for fans who know every verse of Dr. Horrible’s Sing-Along
+              Blog and still hum the melodies on laundry day.
+            </p>
+            <p class="mt-3 max-w-xl text-sm text-slate-300 md:text-base">
+              Choose your size, format, and quantity below, then add items to
+              your cart with a single click.
+            </p>
+          </div>
+
+          <div class="relative">
+            <div
+              class="aspect-[16/9] overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-xl shadow-cyan-500/20"
+            >
+              <img
+                src="/images/products-hero-shelf.webp"
+                alt="Shelf with a folded black T-shirt, a comic book, and glowing blue laboratory props"
+                class="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="absolute -bottom-4 -right-3 hidden rounded-lg bg-cyan-400 px-4 py-2 text-xs font-bold uppercase tracking-wide text-slate-950 shadow-lg shadow-cyan-500/50 md:block"
+            >
+              Lab-approved picks
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- T-SHIRT SECTION -->
+      <section
+        id="tshirt"
+        class="border-b border-slate-800 bg-slate-950 scroll-mt-24"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div
+            class="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] md:items-start"
+          >
+            <!-- Images -->
+            <div class="space-y-4">
+              <div
+                class="overflow-hidden rounded-xl border border-slate-800 bg-slate-900/80"
+              >
+                <img
+                  src="/images/product-tshirt.webp"
+                  alt="Black T-shirt hanging on a wall with a yellow circular emblem inspired by a super-villain lab"
+                  class="h-80 w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div
+                  class="overflow-hidden rounded-lg border border-slate-800 bg-slate-900/80"
+                >
+                  <img
+                    src="/images/product-tshirt-detail.webp"
+                    alt="Close-up of the yellow villain emblem printed on the black T-shirt fabric"
+                    class="h-36 w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <!-- Lifestyle shot (แทน size chart เดิม) -->
+                <div
+                  class="overflow-hidden rounded-lg border border-slate-800 bg-slate-900/80"
+                >
+                  <img
+                    src="/images/product-tshirt-lifestyle.webp"
+                    alt="Person wearing the black lab T-shirt with a yellow emblem at a blue-lit sing-along event"
+                    class="h-36 w-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Content & Form -->
+            <div>
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+              >
+                Apparel
+              </p>
+              <h2
+                class="mt-2 text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+              >
+                Official Lab T-shirt
+              </h2>
+              <p class="mt-3 text-sm text-slate-300 md:text-base">
+                A black T-shirt with a clean yellow circular emblem inspired by
+                a certain villain’s lab logo. Designed to be subtle enough for
+                everyday wear, but obvious enough for fellow fans to spot you
+                across the room.
+              </p>
+              <ul class="mt-3 space-y-2 text-sm text-slate-200">
+                <li>
+                  • Soft cotton-style fabric with a comfortable, classic fit.
+                </li>
+                <li>• Minimal front emblem, no large text or back print.</li>
+                <li>• Available in sizes S–XL.</li>
+              </ul>
+
+              <div
+                class="mt-5 rounded-xl border border-slate-800 bg-slate-900/80 p-4"
+              >
+                <p
+                  class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+                >
+                  Purchase options
+                </p>
+                <p class="mt-2 text-xs text-slate-300">
+                  Select your size and quantity, then add the T-shirt to your
+                  cart.
+                </p>
+
+                <form
+                  id="tshirtForm"
+                  class="mt-3 grid gap-3 text-sm md:grid-cols-2"
+                  novalidate
+                >
+                  <div class="md:col-span-1">
+                    <label
+                      for="tshirtSize"
+                      class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                    >
+                      Size
+                    </label>
+                    <select
+                      id="tshirtSize"
+                      name="tshirtSize"
+                      class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                    >
+                      <option value="">Choose a size</option>
+                      <option value="S">Small</option>
+                      <option value="M">Medium</option>
+                      <option value="L">Large</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </div>
+
+                  <div class="md:col-span-1">
+                    <label
+                      for="tshirtQty"
+                      class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                    >
+                      Quantity
+                    </label>
+                    <input
+                      id="tshirtQty"
+                      name="tshirtQty"
+                      type="number"
+                      min="1"
+                      step="1"
+                      class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                      placeholder="1"
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <button
+                      type="submit"
+                      class="mt-2 w-full rounded-full bg-cyan-400 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-950 hover:bg-cyan-300"
+                    >
+                      Add T-shirt to cart
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMIC / BOOK SECTION -->
+      <section
+        id="comic"
+        class="border-b border-slate-800 bg-slate-950 scroll-mt-24"
+      >
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div
+            class="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] md:items-start"
+          >
+            <!-- Images -->
+            <div class="space-y-4 md:order-2">
+              <div
+                class="overflow-hidden rounded-xl border border-slate-800 bg-slate-900/80"
+              >
+                <img
+                  src="/images/product-comic.webp"
+                  alt="Comic book cover featuring a brooding scientist and supporting characters in bold comic style"
+                  class="h-80 w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="overflow-hidden rounded-lg border border-slate-800 bg-slate-900/80"
+              >
+                <img
+                  src="/images/product-comic-pages.webp"
+                  alt="Open comic book showing dynamic blue-tinted panels and speech bubbles"
+                  class="h-40 w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <!-- Content & Form -->
+            <div class="md:order-1">
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+              >
+                Comic / Book
+              </p>
+              <h2
+                class="mt-2 text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+              >
+                Dr. Horrible’s Lab Notes &amp; Comic
+              </h2>
+              <p class="mt-3 text-sm text-slate-300 md:text-base">
+                A collection that feels like it came straight from the lab:
+                expanded scenes, blue-tinted panels, and scribbled notes that
+                show what happens between the songs.
+              </p>
+              <ul class="mt-3 space-y-2 text-sm text-slate-200">
+                <li>• Comic stories that add depth to key moments.</li>
+                <li>• Sketches, blueprints, and handwritten annotations.</li>
+                <li>• Available as a digital edition or a print-style copy.</li>
+              </ul>
+
+              <div
+                class="mt-5 rounded-xl border border-slate-800 bg-slate-900/80 p-4"
+              >
+                <p
+                  class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+                >
+                  Purchase options
+                </p>
+                <p class="mt-2 text-xs text-slate-300">
+                  Choose your preferred format and quantity, then add the comic
+                  to your cart.
+                </p>
+
+                <form
+                  id="comicForm"
+                  class="mt-3 grid gap-3 text-sm md:grid-cols-2"
+                  novalidate
+                >
+                  <div class="md:col-span-1">
+                    <label
+                      for="comicFormat"
+                      class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                    >
+                      Format
+                    </label>
+                    <select
+                      id="comicFormat"
+                      name="comicFormat"
+                      class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                    >
+                      <option value="">Choose a format</option>
+                      <option value="digital">Digital edition (PDF)</option>
+                      <option value="print">Printed copy</option>
+                    </select>
+                  </div>
+
+                  <div class="md:col-span-1">
+                    <label
+                      for="comicQty"
+                      class="text-xs font-semibold uppercase tracking-wide text-slate-300"
+                    >
+                      Quantity
+                    </label>
+                    <input
+                      id="comicQty"
+                      name="comicQty"
+                      type="number"
+                      min="1"
+                      step="1"
+                      class="mt-1 w-full rounded-lg border border-slate-700 bg-slate-950 px-3 py-2 text-sm text-slate-100 focus:border-cyan-400 focus:outline-none focus:ring-1 focus:ring-cyan-400"
+                      placeholder="1"
+                    />
+                  </div>
+
+                  <div class="md:col-span-2">
+                    <button
+                      type="submit"
+                      class="mt-2 w-full rounded-full bg-cyan-400 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-slate-950 hover:bg-cyan-300"
+                    >
+                      Add comic to cart
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXTRA INFO -->
+      <section class="bg-slate-950">
+        <div class="mx-auto max-w-6xl px-4 py-10 md:py-14">
+          <div
+            class="grid gap-8 md:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] md:items-start"
+          >
+            <div>
+              <h2
+                class="text-2xl font-bold tracking-tight text-slate-50 md:text-3xl"
+              >
+                Designed for fans and collectors.
+              </h2>
+              <p class="mt-3 text-sm text-slate-300 md:text-base">
+                Whether you keep everything pristine on a shelf or wear it to
+                every sing-along party, these pieces are meant to feel like a
+                direct extension of the musical itself.
+              </p>
+              <ul class="mt-3 space-y-2 text-sm text-slate-200">
+                <li>• Focused selection: one shirt, one book, no filler.</li>
+                <li>• Clean layout that makes details easy to scan.</li>
+                <li>
+                  • Clear calls to action so you always know what to do next.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="rounded-xl border border-slate-800 bg-slate-900/80 p-4 text-sm text-slate-200"
+            >
+              <p
+                class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300"
+              >
+                Tip
+              </p>
+              <p class="mt-2">
+                Use the section links in the main navigation from other pages
+                (T-shirt and Comic anchors) to jump straight to each product on
+                this page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm text-slate-300">
+        <div
+          class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
+        >
+          <p class="text-xs md:text-sm">
+            &copy; <span id="year"></span> DrHorrible.com. This site is a
+            fan-friendly hub for the musical world of Dr. Horrible’s Sing-Along
+            Blog.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="/privacy-policy.html" class="hover:text-cyan-300">
+              Privacy Policy
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS for menu + form validation + notifications (no real backend) -->
+    <script>
+      // Dynamic year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile menu toggle
+      const menuButton = document.getElementById("menuButton");
+      const mobileNav = document.getElementById("mobileNav");
+      if (menuButton && mobileNav) {
+        menuButton.addEventListener("click", () => {
+          const isOpen = !mobileNav.classList.contains("hidden");
+          mobileNav.classList.toggle("hidden");
+          menuButton.setAttribute("aria-expanded", String(!isOpen));
+        });
+      }
+
+      // Notification helper
+      function showNotification(message, type) {
+        const wrapper = document.getElementById("notification");
+        const inner = document.getElementById("notificationInner");
+        const text = document.getElementById("notificationMessage");
+
+        if (!wrapper || !inner || !text) return;
+
+        text.textContent = message;
+        inner.className =
+          "pointer-events-auto max-w-md rounded-lg border px-4 py-3 text-sm shadow-lg";
+
+        if (type === "error") {
+          inner.classList.add(
+            "bg-red-900/90",
+            "border-red-500",
+            "text-red-50",
+            "shadow-red-500/30"
+          );
+        } else {
+          inner.classList.add(
+            "bg-emerald-900/90",
+            "border-emerald-500",
+            "text-emerald-50",
+            "shadow-emerald-500/30"
+          );
+        }
+
+        wrapper.classList.remove("hidden");
+        setTimeout(() => {
+          wrapper.classList.add("hidden");
+        }, 3000);
+      }
+
+      // T-shirt form validation
+      const tshirtForm = document.getElementById("tshirtForm");
+      if (tshirtForm) {
+        tshirtForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const size = document.getElementById("tshirtSize");
+          const qty = document.getElementById("tshirtQty");
+
+          const errors = [];
+          if (!size.value) {
+            errors.push("Please choose a T-shirt size.");
+          }
+          if (!qty.value || Number(qty.value) < 1) {
+            errors.push("Please enter a quantity of at least 1.");
+          }
+
+          if (errors.length > 0) {
+            showNotification(errors[0], "error");
+            return;
+          }
+
+          showNotification(
+            "T-shirt added to your cart successfully.",
+            "success"
+          );
+          tshirtForm.reset();
+        });
+      }
+
+      // Comic form validation
+      const comicForm = document.getElementById("comicForm");
+      if (comicForm) {
+        comicForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const format = document.getElementById("comicFormat");
+          const qty = document.getElementById("comicQty");
+
+          const errors = [];
+          if (!format.value) {
+            errors.push("Please choose a comic format.");
+          }
+          if (!qty.value || Number(qty.value) < 1) {
+            errors.push("Please enter a quantity of at least 1.");
+          }
+
+          if (errors.length > 0) {
+            showNotification(errors[0], "error");
+            return;
+          }
+
+          showNotification("Comic added to your cart successfully.", "success");
+          comicForm.reset();
+        });
+      }
+    </script>
+  </body>
+</html>

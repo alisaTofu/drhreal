@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main pages -->
+  <url>
+    <loc>https://drhorrible.com/</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/about.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/products.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/extras.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/plan.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/mushortio.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/contact.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/privacy-policy.html</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Lyrics & liner notes section -->
+  <url>
+    <loc>https://drhorrible.com/dr-horrible-lyricsliner-notes/</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://drhorrible.com/dr-horrible-lyricsliner-notes/my-eyes/</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Extras sub-section: web banners -->
+  <url>
+    <loc>https://drhorrible.com/extras/web-banners/</loc>
+    <lastmod>2025-11-14T22:15:00+07:00</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
